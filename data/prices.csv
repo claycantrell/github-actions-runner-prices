@@ -1,0 +1,14 @@
+runner,hosting,usd_per_min_2vcpu,usd_per_min_4vcpu,usd_per_min_8vcpu,billing,last_checked
+Sengi Basic,hosted,0.001,0.002,0.004,Rounded up to the whole minute once per job; boot and teardown not billed,2026-11-07
+Sengi Premium,hosted,0.003,0.006,0.012,Rounded up to the whole minute once per job; boot and teardown not billed,2026-11-07
+GitHub-hosted,hosted,0.006,0.012,0.022,Rounded up to the whole minute per job,2026-11-07
+Blacksmith,hosted,0.004,0.008,0.016,,2026-11-07
+WarpBuild,hosted,0.004,0.008,0.016,Billed on a per-minute basis; how a partial minute counts is not stated,2026-11-07
+Namespace,hosted,0.006,0.012,0.024,"One-minute minimum, and the next 15 seconds round down: 70 seconds bill as 1 minute, 150 seconds as 3",2026-11-07
+Depot,hosted,0.006,0.012,0.024,"Billed per minute, tracked per second, with no one-minute minimum: a 30-second job bills 30 seconds",2026-11-07
+RunsOn,your own AWS account,0.0009,0.0013,0.0021,,2026-11-07
+Latchkey,hosted,0.0025,0.005,0.01,"Billed per minute, rounded up per job",2026-11-07
+StarSling,hosted,0.004,0.008,0.016,,2026-11-07
+Avrea,hosted,0.004,0.008,0.016,,2026-11-07
+compiler.dev,hosted,0.002,0.004,0.008,,2026-11-07
+BuildJet,shut down,,,,Stopped running jobs 2026-03-31; shutdown announced 2026-02-06.,2026-11-07

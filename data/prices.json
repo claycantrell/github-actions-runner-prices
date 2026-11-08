@@ -1,0 +1,811 @@
+{
+  "title": "GitHub Actions runner prices, 2026",
+  "last_checked": "2026-11-07",
+  "scope": "Linux x64, USD per minute, list prices, matched 2, 4 and 8 vCPU sizes",
+  "currency": "USD",
+  "unit": "per minute, list price",
+  "publisher": "Sengi Team (sengi.run). Sengi rows are our own product.",
+  "runners": [
+    {
+      "runner": "Sengi Basic",
+      "provider": "Sengi",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.001,
+        "4": 0.002,
+        "8": 0.004
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "labels": {
+        "2": "sengi-basic-2-ubuntu-2404",
+        "4": "sengi-basic-4-ubuntu-2404",
+        "8": "sengi-basic-8-ubuntu-2404"
+      },
+      "basic_minutes_per_dollar_vs_this": "1,000 per $1",
+      "how_you_pay": "Per minute, no plan. 3,000 free minutes a month, no card.",
+      "free_minutes_per_month": 3000,
+      "metering": {
+        "unit": "minute",
+        "rule": "Rounded up to the whole minute once per job; boot and teardown not billed",
+        "source": "Sengi's published pricing"
+      },
+      "source": {
+        "name": "Sengi's published pricing",
+        "url": "https://sengi.run/#pricing",
+        "read": "2026-11-07"
+      },
+      "plans": [
+        {
+          "name": null,
+          "usd_per_month": 0,
+          "included_usd": 3,
+          "allowance": "free",
+          "note": "3,000 free Basic credits a month: 3,000 minutes at 2 vCPU, 1,500 at 4 vCPU or 750 at 8 vCPU, worth $3 at every size"
+        }
+      ]
+    },
+    {
+      "runner": "Sengi Premium",
+      "provider": "Sengi",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.003,
+        "4": 0.006,
+        "8": 0.012
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "labels": {
+        "2": "sengi-premium-2-ubuntu-2404",
+        "4": "sengi-premium-4-ubuntu-2404",
+        "8": "sengi-premium-8-ubuntu-2404"
+      },
+      "basic_minutes_per_dollar_vs_this": "3\u00d7",
+      "how_you_pay": "Per minute, no plan. Performance CPUs for faster builds.",
+      "measured": {
+        "docker_build_4_vcpu": "7m34s",
+        "github_docker_build_4_vcpu": "14m36s",
+        "benchmark_date": "2026-10-09"
+      },
+      "metering": {
+        "unit": "minute",
+        "rule": "Rounded up to the whole minute once per job; boot and teardown not billed",
+        "source": "Sengi's published pricing"
+      },
+      "source": {
+        "name": "Sengi's published pricing",
+        "url": "https://sengi.run/#pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "GitHub-hosted",
+      "provider": "GitHub",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.006,
+        "4": 0.012,
+        "8": 0.022
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "labels": {
+        "2": "ubuntu-latest (private repository)",
+        "4": "linux_4_core larger runner",
+        "8": "linux_8_core larger runner"
+      },
+      "basic_minutes_per_dollar_vs_this": "6\u00d7",
+      "how_you_pay": "Per minute after the plan\u2019s included usage, $12 to $300 a month. 4 and 8 vCPU are larger runners, for Team and Enterprise Cloud organizations.",
+      "metering": {
+        "unit": "minute",
+        "rule": "Rounded up to the whole minute per job",
+        "source": "GitHub's Actions runner pricing reference: it rounds the minutes and partial minutes each job uses up to the nearest whole minute"
+      },
+      "source": {
+        "name": "GitHub's Actions runner pricing reference",
+        "url": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+        "read": "2026-11-07"
+      },
+      "plans": [
+        {
+          "name": "Team",
+          "usd_per_month": 0,
+          "included_usd": 18,
+          "allowance": "included",
+          "note": "GitHub Team's $18 of included usage a month, which larger runners draw on at their own rate; the per-seat plan price is not counted"
+        }
+      ]
+    },
+    {
+      "runner": "Blacksmith",
+      "provider": "Blacksmith",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.004,
+        "4": 0.008,
+        "8": 0.016
+      },
+      "basic_minutes_per_dollar_vs_this": "4\u00d7",
+      "how_you_pay": "Per minute. 3,000 free minutes a month.",
+      "free_minutes_per_month": 3000,
+      "source": {
+        "name": "Blacksmith's pricing page, Ubuntu x64",
+        "url": "https://www.blacksmith.sh/pricing",
+        "read": "2026-11-07"
+      },
+      "plans": [
+        {
+          "name": null,
+          "usd_per_month": 0,
+          "included_usd": {
+            "2": 12
+          },
+          "allowance": "free",
+          "note": "3,000 free minutes a month; the pricing page does not say how they count at 4 or 8 vCPU, so those sums leave them out"
+        }
+      ]
+    },
+    {
+      "runner": "WarpBuild",
+      "provider": "WarpBuild",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.004,
+        "4": 0.008,
+        "8": 0.016
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "basic_minutes_per_dollar_vs_this": "4\u00d7",
+      "how_you_pay": "Per minute.",
+      "metering": {
+        "rule": "Billed on a per-minute basis; how a partial minute counts is not stated",
+        "source": "WarpBuild's pricing page"
+      },
+      "source": {
+        "name": "WarpBuild's pricing page, Cloud Runners Linux x86-64",
+        "url": "https://www.warpbuild.com/pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "Namespace",
+      "provider": "Namespace",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.006,
+        "4": 0.012,
+        "8": 0.024
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "usd_per_minute_inside_plan": {
+        "2": 0.004,
+        "4": 0.008,
+        "8": 0.016
+      },
+      "plan": "Team, $100 a month, 100,000 unit minutes",
+      "note": "Pay-as-you-go (overage) rates for the 2x8, 4x16 and 8x32 shapes; Namespace's 2 GB-per-vCPU shapes cost half as much.",
+      "basic_minutes_per_dollar_vs_this": "6\u00d7",
+      "how_you_pay": "Pay as you go. $0.004, $0.008 and $0.016 inside the $100-a-month Team plan.",
+      "metering": {
+        "unit": "minute",
+        "minimum_minutes": 1,
+        "grace_seconds": 15,
+        "rule": "One-minute minimum, and the next 15 seconds round down: 70 seconds bill as 1 minute, 150 seconds as 3",
+        "source": "Namespace's pricing page"
+      },
+      "source": {
+        "name": "Namespace's pricing page",
+        "url": "https://namespace.so/pricing",
+        "read": "2026-11-07"
+      },
+      "plans": [
+        {
+          "name": "pay as you go",
+          "usd_per_month": 0,
+          "included_usd": 0
+        },
+        {
+          "name": "Team",
+          "usd_per_month": 100,
+          "included_usd": 150,
+          "allowance": "included",
+          "note": "100,000 unit minutes (1 vCPU and 2 GB for a minute), worth $150 at pay-as-you-go rates"
+        },
+        {
+          "name": "Business",
+          "usd_per_month": 250,
+          "included_usd": 375,
+          "allowance": "included",
+          "note": "250,000 unit minutes, worth $375 at pay-as-you-go rates"
+        }
+      ]
+    },
+    {
+      "runner": "Depot",
+      "provider": "Depot",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.006,
+        "4": 0.012,
+        "8": 0.024
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "plan": "Developer, $20 a month, 2,000 minutes included",
+      "basic_minutes_per_dollar_vs_this": "6\u00d7",
+      "how_you_pay": "Per minute, on a plan from $20 a month with 2,000 minutes included.",
+      "metering": {
+        "unit": "second",
+        "rule": "Billed per minute, tracked per second, with no one-minute minimum: a 30-second job bills 30 seconds",
+        "source": "Depot's pricing page, usage granularity"
+      },
+      "source": {
+        "name": "Depot's runner-type docs and pricing page",
+        "url": "https://depot.dev/docs/github-actions/runner-types",
+        "plans_url": "https://depot.dev/pricing",
+        "read": "2026-11-07"
+      },
+      "plans": [
+        {
+          "name": "Developer",
+          "usd_per_month": 20,
+          "included_usd": 12,
+          "allowance": "included",
+          "note": "2,000 included minutes, counted at 1\u00d7, 2\u00d7 and 4\u00d7 for 2, 4 and 8 vCPU; one user"
+        },
+        {
+          "name": "Startup",
+          "usd_per_month": 200,
+          "included_usd": 120,
+          "allowance": "included",
+          "note": "20,000 included minutes, unlimited users"
+        }
+      ]
+    },
+    {
+      "runner": "RunsOn",
+      "provider": "RunsOn",
+      "hosting": "your own AWS account",
+      "usd_per_minute": {
+        "2": 0.0009,
+        "4": 0.0013,
+        "8": 0.0021
+      },
+      "usd_per_minute_basis": "What AWS bills: spot price, us-east-1, 7-day average, cheapest zone, including 30 GB gp3. Plus the RunsOn licence.",
+      "instances": {
+        "2": "m8a.large",
+        "4": "m8a.xlarge",
+        "8": "c8id.2xlarge"
+      },
+      "licence_eur_per_year": {
+        "Starter": 300,
+        "Growth": 900,
+        "Scale": 1800,
+        "Sponsorship": 3600
+      },
+      "basic_minutes_per_dollar_vs_this": "0.9\u00d7 before the licence",
+      "how_you_pay": "Runs in your own AWS account: AWS\u2019s spot price plus a licence from \u20ac300 a year.",
+      "source": {
+        "name": "RunsOn's pricing page",
+        "url": "https://runs-on.com/pricing/",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "Latchkey",
+      "provider": "Latchkey",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.0025,
+        "4": 0.005,
+        "8": 0.01
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "labels": {
+        "2": "latchkey-small",
+        "4": "latchkey-medium",
+        "8": "latchkey-large"
+      },
+      "basic_minutes_per_dollar_vs_this": "2.5\u00d7",
+      "how_you_pay": "Per minute, rounded up per job, on a plan from $5 a month that includes 2,000 minutes at 2 vCPU.",
+      "plans": [
+        {
+          "name": "Developer",
+          "usd_per_month": 5,
+          "included_usd": 5,
+          "allowance": "included",
+          "note": "2,000 small-equivalent minutes (a 4 vCPU minute counts as two, an 8 vCPU minute as four), one repository, one seat"
+        },
+        {
+          "name": "Launch",
+          "usd_per_month": 19,
+          "included_usd": 10,
+          "allowance": "included",
+          "note": "4,000 small-equivalent minutes, 10 repositories, 3 seats"
+        },
+        {
+          "name": "Scale",
+          "usd_per_month": 49,
+          "included_usd": 15,
+          "allowance": "included",
+          "note": "6,000 small-equivalent minutes, 40 repositories, 5 seats"
+        }
+      ],
+      "metering": {
+        "unit": "minute",
+        "rule": "Billed per minute, rounded up per job",
+        "source": "Latchkey's pricing page"
+      },
+      "source": {
+        "name": "Latchkey's pricing page",
+        "url": "https://latchkey.dev/pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "StarSling",
+      "provider": "StarSling",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.004,
+        "4": 0.008,
+        "8": 0.016
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "labels": {
+        "2": "starsling-ubuntu-26.04-2",
+        "4": "starsling-ubuntu-26.04",
+        "8": "starsling-ubuntu-26.04-8"
+      },
+      "basic_minutes_per_dollar_vs_this": "4\u00d7",
+      "how_you_pay": "Per minute.",
+      "source": {
+        "name": "StarSling's pricing page, CPU runners",
+        "url": "https://starsling.dev/pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "Avrea",
+      "provider": "Avrea",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.004,
+        "4": 0.008,
+        "8": 0.016
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "basic_minutes_per_dollar_vs_this": "4\u00d7",
+      "how_you_pay": "Per minute. 3,000 free minutes a month per organization at 2 vCPU, 1,500 at 4 vCPU or 750 at 8.",
+      "free_minutes_per_month": 3000,
+      "note": "Matched-memory shapes; Avrea also lists 4 vCPU with 8 GB at $0.006 and 8 vCPU with 16 GB at $0.012.",
+      "plans": [
+        {
+          "name": null,
+          "usd_per_month": 0,
+          "included_usd": 12,
+          "allowance": "free",
+          "note": "3,000 free minutes a month at 2 vCPU, used proportionally at larger sizes, worth $12 at every size"
+        }
+      ],
+      "source": {
+        "name": "Avrea's pricing page, Linux x86",
+        "url": "https://avrea.com/pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "compiler.dev",
+      "provider": "compiler.dev",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.002,
+        "4": 0.004,
+        "8": 0.008
+      },
+      "labels": {
+        "2": "compiler-2cpu",
+        "4": "compiler-4cpu",
+        "8": "compiler-8cpu"
+      },
+      "basic_minutes_per_dollar_vs_this": "2\u00d7",
+      "how_you_pay": "Per minute from prepaid credit. 200 free minutes over a 14-day trial.",
+      "source": {
+        "name": "compiler.dev's pricing page",
+        "url": "https://compiler.dev/pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "BuildJet",
+      "provider": "BuildJet",
+      "hosting": "shut down",
+      "usd_per_minute": null,
+      "status": "Stopped running jobs 2026-03-31; shutdown announced 2026-02-06.",
+      "basic_minutes_per_dollar_vs_this": "\u2013",
+      "how_you_pay": "Stopped running jobs March 31, 2026.",
+      "source": {
+        "name": "BuildJet's shutdown notice",
+        "url": "https://buildjet.com/for-github-actions/blog/we-are-shutting-down",
+        "read": "2026-11-07"
+      }
+    }
+  ],
+  "other_runners": [
+    {
+      "runner": "CRACI",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.004
+      },
+      "usd_per_vcpu_minute": 0.002,
+      "memory_gb": {
+        "2": 6
+      },
+      "how_you_pay": "$0.002 per vCPU-minute, metered per second, no monthly fee: $0.004 a minute for its default 2 vCPU, 6 GB runner.",
+      "metering": {
+        "unit": "second",
+        "rule": "Metered per second",
+        "source": "CRACI's pricing page"
+      },
+      "source": {
+        "name": "CRACI's pricing page",
+        "url": "https://craci.com/pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "tempus.build",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.004,
+        "4": 0.008
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16
+      },
+      "how_you_pay": "Per minute, billed per second, from a prepaid balance; 8 vCPU on request; GitHub organizations; runs in the EU.",
+      "metering": {
+        "unit": "second",
+        "rule": "Billed per second",
+        "source": "tempus.build's pricing section"
+      },
+      "source": {
+        "name": "tempus.build's pricing section",
+        "url": "https://tempus.build/en/",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "FlameWill",
+      "hosting": "hosted",
+      "arch": "arm64",
+      "usd_per_minute": {
+        "2": 0.0009,
+        "4": 0.0018,
+        "8": 0.0048
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32
+      },
+      "how_you_pay": "arm64 only, in the EU, per minute from a prepaid balance; x64 listed as coming.",
+      "source": {
+        "name": "FlameWill's pricing page",
+        "url": "https://flamewill.com/pricing/",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "Bitrise Build Hub",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "4": 0.0125
+      },
+      "memory_gb": {
+        "4": 16
+      },
+      "plan_from_usd_per_month": 13.5,
+      "how_you_pay": "Linux Medium (4 vCPU, 16 GB) at $0.0125 a minute from a monthly budget, plans from $13.50 a month billed yearly; pay-as-you-go past the budget is twice the rate and off by default.",
+      "source": {
+        "name": "Bitrise's pricing page, Build Hub",
+        "url": "https://bitrise.io/pricing",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "Cirrus Runners",
+      "hosting": "hosted, flat monthly",
+      "flat_usd_per_month": 150,
+      "how_you_pay": "$150 a month per runner with unlimited minutes; the Linux x86 runner is 16 vCPU and 48 GB, and you buy one runner per job you want running at once.",
+      "source": {
+        "name": "Cirrus Runners' pricing page",
+        "url": "https://cirrus-runners.app/pricing/",
+        "read": "2026-11-07"
+      }
+    },
+    {
+      "runner": "Actuated",
+      "hosting": "your own servers",
+      "flat_usd_per_month": 150,
+      "how_you_pay": "$150 a month for the first server and $125 for each additional one, unlimited minutes, on servers you provide.",
+      "source": {
+        "name": "Actuated's pricing page",
+        "url": "https://actuated.com/pricing",
+        "read": "2026-11-07"
+      }
+    }
+  ],
+  "github": {
+    "note": "GitHub's own published Actions rates and rules, read 2026-11-07. Standard runners are for private repositories; larger runners are for organizations on GitHub Team or Enterprise Cloud.",
+    "last_checked": "2026-11-07",
+    "sources": [
+      {
+        "name": "GitHub's Actions runner pricing reference",
+        "url": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+        "read": "2026-11-07"
+      },
+      {
+        "name": "GitHub's Actions billing documentation",
+        "url": "https://docs.github.com/en/billing/concepts/product-billing/github-actions",
+        "read": "2026-11-07"
+      },
+      {
+        "name": "GitHub's product usage included with each plan",
+        "url": "https://docs.github.com/en/billing/reference/product-usage-included",
+        "read": "2026-11-07"
+      },
+      {
+        "name": "GitHub's GitHub-hosted runners reference",
+        "url": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+        "read": "2026-11-07"
+      },
+      {
+        "name": "GitHub's larger runners reference",
+        "url": "https://docs.github.com/en/actions/reference/runners/larger-runners",
+        "read": "2026-11-07"
+      },
+      {
+        "name": "GitHub's self-hosted runners documentation",
+        "url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+        "read": "2026-11-07"
+      },
+      {
+        "name": "GitHub changelog, Update to GitHub Actions pricing, December 16, 2025",
+        "url": "https://github.blog/changelog/2025-12-16-coming-soon-simpler-pricing-and-a-better-experience-for-github-actions/",
+        "read": "2026-11-07"
+      }
+    ],
+    "standard_runners": [
+      {
+        "runner": "Linux 1-core x64",
+        "label": "ubuntu-slim",
+        "vcpu": 1,
+        "memory_gb": 5,
+        "usd_per_minute": 0.002,
+        "note": "A container on a shared VM, not a full VM"
+      },
+      {
+        "runner": "Linux 2-core x64",
+        "label": "ubuntu-latest",
+        "vcpu": 2,
+        "memory_gb": 8,
+        "usd_per_minute": 0.006
+      },
+      {
+        "runner": "Linux 2-core arm64",
+        "label": "ubuntu-24.04-arm",
+        "vcpu": 2,
+        "memory_gb": 8,
+        "usd_per_minute": 0.005
+      },
+      {
+        "runner": "Windows 2-core x64",
+        "label": "windows-latest",
+        "vcpu": 2,
+        "memory_gb": 8,
+        "usd_per_minute": 0.01
+      },
+      {
+        "runner": "Windows 2-core arm64",
+        "label": "windows-11-arm",
+        "vcpu": 2,
+        "memory_gb": 8,
+        "usd_per_minute": 0.01
+      },
+      {
+        "runner": "macOS 3-core M1",
+        "label": "macos-latest",
+        "vcpu": 3,
+        "memory_gb": 7,
+        "usd_per_minute": 0.062
+      },
+      {
+        "runner": "macOS 4-core Intel",
+        "label": "macos-15-intel",
+        "vcpu": 4,
+        "memory_gb": 14,
+        "usd_per_minute": 0.062
+      }
+    ],
+    "public_repositories": "Standard GitHub-hosted runners are free and unlimited in public repositories, where the Linux and Windows runners have 4 vCPU and 16 GB. Larger runners are billed in public repositories.",
+    "included_usage": {
+      "unit": "USD of compute a month, private repositories",
+      "rows": [
+        {
+          "plan": "GitHub Free",
+          "usd_per_month": 12,
+          "artifact_storage": "500 MB"
+        },
+        {
+          "plan": "GitHub Pro",
+          "usd_per_month": 18,
+          "artifact_storage": "1 GB"
+        },
+        {
+          "plan": "GitHub Free for organizations",
+          "usd_per_month": 12,
+          "artifact_storage": "500 MB"
+        },
+        {
+          "plan": "GitHub Team",
+          "usd_per_month": 18,
+          "artifact_storage": "2 GB"
+        },
+        {
+          "plan": "GitHub Enterprise Cloud",
+          "usd_per_month": 300,
+          "artifact_storage": "50 GB"
+        }
+      ],
+      "cache_storage_gb_per_repository": 10,
+      "rule": "A dollar amount, not a number of minutes: each runner's per-minute rate is deducted from it, and it resets each billing cycle. Standard runners draw on it on every plan; larger runners draw on it on Team and Enterprise Cloud."
+    },
+    "storage_usd_per_gb_month": {
+      "artifacts_and_packages": 0.25,
+      "actions_cache": 0.07
+    },
+    "rounding": "GitHub rounds the minutes and partial minutes each job uses up to the nearest whole minute.",
+    "larger_runners_linux": {
+      "note": "Linux larger runners by vCPU. The x64 2-core row is the Linux Advanced 2-core runner. Available only to organizations on GitHub Team or Enterprise Cloud.",
+      "usd_per_minute": {
+        "x64": {
+          "2": 0.006,
+          "4": 0.012,
+          "8": 0.022,
+          "16": 0.042,
+          "32": 0.082,
+          "64": 0.162,
+          "96": 0.252
+        },
+        "arm64": {
+          "2": 0.005,
+          "4": 0.008,
+          "8": 0.014,
+          "16": 0.026,
+          "32": 0.05,
+          "64": 0.098
+        }
+      },
+      "memory_gb": {
+        "2": 8,
+        "4": 16,
+        "8": 32,
+        "16": 64,
+        "32": 128,
+        "64": 256,
+        "96": 384
+      },
+      "arm64_memory_gb": {
+        "64": 208
+      }
+    },
+    "macos_runners": [
+      {
+        "runner": "macOS 3-core M1",
+        "label": "macos-latest",
+        "chip": "Apple M1",
+        "vcpu": 3,
+        "memory_gb": 7,
+        "usd_per_minute": 0.062,
+        "class": "standard"
+      },
+      {
+        "runner": "macOS 4-core Intel",
+        "label": "macos-15-intel",
+        "chip": "Intel",
+        "vcpu": 4,
+        "memory_gb": 14,
+        "usd_per_minute": 0.062,
+        "class": "standard"
+      },
+      {
+        "runner": "macOS 12-core Intel",
+        "label": "macos-latest-large",
+        "chip": "Intel",
+        "vcpu": 12,
+        "memory_gb": 30,
+        "usd_per_minute": 0.077,
+        "class": "larger"
+      },
+      {
+        "runner": "macOS 5-core M2 Pro",
+        "label": "macos-latest-xlarge",
+        "chip": "Apple M2 Pro",
+        "vcpu": 5,
+        "memory_gb": 14,
+        "usd_per_minute": 0.102,
+        "class": "larger"
+      }
+    ],
+    "macos_elsewhere": [
+      {
+        "runner": "Blacksmith",
+        "chip": "Apple M4",
+        "usd_per_minute": 0.08,
+        "source": {
+          "name": "Blacksmith's pricing page, macOS",
+          "url": "https://www.blacksmith.sh/pricing",
+          "read": "2026-11-07"
+        }
+      }
+    ],
+    "self_hosted_platform_charge": {
+      "announced": "2025-12-16",
+      "usd_per_minute": 0.002,
+      "planned_start": "2026-03-01",
+      "scope": "Self-hosted runner usage in private repositories, counted toward the plan's included usage; public repositories free; GitHub Enterprise Server unaffected",
+      "status": "postponed",
+      "in_effect": false,
+      "status_note": "GitHub postponed the charge to re-evaluate its approach; its billing documentation, read 2026-11-07, lists self-hosted runners as free, and no new date has been announced."
+    }
+  },
+  "sengi": {
+    "free_minutes_per_month": {
+      "2 vCPU": 3000,
+      "4 vCPU": 1500,
+      "8 vCPU": 750,
+      "note": "3,000 shared Basic credits a month, 1/2/4 credits per minute at 2/4/8 vCPU"
+    },
+    "switch": {
+      "from": "runs-on: ubuntu-latest",
+      "to": "runs-on: sengi-basic-2-ubuntu-2404"
+    }
+  },
+  "full_comparison": "https://sengi.run/compare"
+}
