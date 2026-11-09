@@ -2,7 +2,6 @@
 
 Per-minute list prices for GitHub-hosted runners and the hosted services that replace them, at matched 2, 4 and 8 vCPU Linux x64 sizes. **Last checked 2026-11-07.** Every price was read from the provider's own pricing page on that date. Machine-readable copies: [`data/prices.json`](data/prices.json) and [`data/prices.csv`](data/prices.csv).
 
-Published by the Sengi Team. Sengi is our product and its rows are labelled. Corrections from any provider are welcome as an issue or pull request.
 
 ## Price per minute, Linux x64
 
