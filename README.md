@@ -53,23 +53,11 @@ List price before free or included usage.
 | Cirrus Runners | not published per minute |  |
 | Actuated | not published per minute |  |
 
-## How each provider bills a partial minute
-
-- **Sengi Basic**: Rounded up to the whole minute once per job; boot and teardown not billed.
-- **Sengi Premium**: Rounded up to the whole minute once per job; boot and teardown not billed.
-- **GitHub-hosted**: Rounded up to the whole minute per job.
-- **WarpBuild**: Billed on a per-minute basis; how a partial minute counts is not stated.
-- **Namespace**: One-minute minimum, and the next 15 seconds round down: 70 seconds bill as 1 minute, 150 seconds as 3.
-- **Depot**: Billed per minute, tracked per second, with no one-minute minimum: a 30-second job bills 30 seconds.
-- **Latchkey**: Billed per minute, rounded up per job.
 
 ## GitHub's included usage
 
 GitHub plans include a dollar amount of Actions usage each month: $12 on Free, $18 on Pro and Team, $300 on Enterprise Cloud. Larger runners on Team and Enterprise Cloud draw on it at their own rate. Standard runners are free for public repositories.
 
-## Switching runners
-
-Hosted runners replace GitHub's by changing one line of the workflow, for example `runs-on: ubuntu-latest` to `runs-on: sengi-basic-2-ubuntu-2404`. Sengi includes 3,000 free Basic minutes a month (1,500 at 4 vCPU, 750 at 8 vCPU).
 
 ## Method
 
