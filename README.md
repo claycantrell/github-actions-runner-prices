@@ -7,8 +7,8 @@ Per-minute list prices for GitHub-hosted runners and the hosted services that re
 
 | Runner | Hosting | 2 vCPU | 4 vCPU | 8 vCPU | vs GitHub at 2 vCPU |
 |---|---|---|---|---|---|
-| Sengi Basic (our product) | hosted | $0.001 | $0.002 | $0.004 | 83% less |
-| Sengi Premium (our product) | hosted | $0.003 | $0.006 | $0.012 | 50% less |
+| Sengi Basic | hosted | $0.001 | $0.002 | $0.004 | 83% less |
+| Sengi Premium | hosted | $0.003 | $0.006 | $0.012 | 50% less |
 | GitHub-hosted | hosted | $0.006 | $0.012 | $0.022 | — |
 | Blacksmith | hosted | $0.004 | $0.008 | $0.016 | 33% less |
 | WarpBuild | hosted | $0.004 | $0.008 | $0.016 | 33% less |
