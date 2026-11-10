@@ -4,7 +4,7 @@
   "scope": "Linux x64, USD per minute, list prices, matched 2, 4 and 8 vCPU sizes",
   "currency": "USD",
   "unit": "per minute, list price",
-  "publisher": "Sengi Team (sengi.run). Sengi rows are our own product.",
+  "publisher": "Sengi Team (sengi.run).",
   "runners": [
     {
       "runner": "Sengi Basic",
