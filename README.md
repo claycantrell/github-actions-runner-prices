@@ -51,6 +51,7 @@ List price before free or included usage.
 | FlameWill | 2 vCPU $0.0009, 4 vCPU $0.0018, 8 vCPU $0.0048 | arm64 only, priced by memory (8, 16 and 32 GB) |
 | Bitrise Build Hub | 4 vCPU $0.0125 |  |
 | Cirrus Runners | not published per minute |  |
+| Skipbox | not published per minute | flat monthly with unlimited minutes: 4 vCPU $39, 8 vCPU $79, 16 vCPU $149 |
 | Actuated | not published per minute |  |
 
 
