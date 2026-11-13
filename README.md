@@ -64,3 +64,4 @@ GitHub plans include a dollar amount of Actions usage each month: $12 on Free, $
 - Linux x64 list prices at matched vCPU counts, in USD per minute, without volume discounts or commitments.
 - Prices are read from each provider's public pricing page on the date above and re-checked when a provider changes them.
 - Full comparison with sources, FAQs and monthly cost after free usage: https://sengi.run/compare
+- How-to answers on runner pricing, the self-hosted runner charge, `runs-on` labels, autoscaling and self-hosting costs: https://github.com/claycantrell/github-actions-runners-guide
