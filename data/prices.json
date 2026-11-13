@@ -563,11 +563,11 @@
       "runner": "Skipbox",
       "hosting": "hosted, flat monthly",
       "flat_usd_per_month": 39,
-      "how_you_pay": "$39 a month for a 4 vCPU, 8 GB runner (S), $79 for 8 vCPU and 16 GB (M), $149 for 16 vCPU and 32 GB (L), with unlimited minutes and no usage charges; plans add up for jobs at once. Linux x64, private repositories of GitHub organizations and personal accounts; a 7-day or 3,000-minute trial with no card.",
+      "how_you_pay": "$39 a month for a 4 vCPU, 8 GB runner (S), $79 for 8 vCPU and 16 GB (M), $149 for 16 vCPU and 32 GB (L), with unlimited minutes and no usage charges; plans add up for jobs at once. Linux x64, public and private repositories of GitHub organizations and personal accounts; a 7-day or 3,000-minute trial with no card.",
       "source": {
         "name": "Skipbox's pricing page",
         "url": "https://skipbox.dev/pricing",
-        "read": "2026-11-12"
+        "read": "2026-11-13"
       }
     },
     {
