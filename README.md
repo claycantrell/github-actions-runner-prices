@@ -7,19 +7,19 @@ Per-minute list prices for GitHub-hosted runners and the hosted services that re
 
 | Runner | Hosting | 2 vCPU | 4 vCPU | 8 vCPU | vs GitHub at 2 vCPU |
 |---|---|---|---|---|---|
-| Sengi Basic (our product) | hosted | $0.001 | $0.002 | $0.004 | 83% less |
-| Sengi Premium (our product) | hosted | $0.003 | $0.006 | $0.012 | 50% less |
-| GitHub-hosted | hosted | $0.006 | $0.012 | $0.022 | — |
-| Blacksmith | hosted | $0.004 | $0.008 | $0.016 | 33% less |
-| WarpBuild | hosted | $0.004 | $0.008 | $0.016 | 33% less |
-| Namespace | hosted | $0.006 | $0.012 | $0.024 | same |
-| Depot | hosted | $0.006 | $0.012 | $0.024 | same |
-| RunsOn | your own AWS account | $0.0009 | $0.0013 | $0.0021 | 85% less |
-| Latchkey | hosted | $0.0025 | $0.005 | $0.01 | 58% less |
-| StarSling | hosted | $0.004 | $0.008 | $0.016 | 33% less |
-| Avrea | hosted | $0.004 | $0.008 | $0.016 | 33% less |
-| compiler.dev | hosted | $0.002 | $0.004 | $0.008 | 67% less |
-| BuildJet | shut down 2026-03-31 | — | — | — | — |
+| [Sengi Basic (our product)](https://sengi.run/#pricing) | hosted | $0.001 | $0.002 | $0.004 | 83% less |
+| [Sengi Premium (our product)](https://sengi.run/#pricing) | hosted | $0.003 | $0.006 | $0.012 | 50% less |
+| [GitHub-hosted](https://docs.github.com/en/billing/reference/actions-runner-pricing) | hosted | $0.006 | $0.012 | $0.022 | — |
+| [Blacksmith](https://www.blacksmith.sh/pricing) | hosted | $0.004 | $0.008 | $0.016 | 33% less |
+| [WarpBuild](https://www.warpbuild.com/pricing) | hosted | $0.004 | $0.008 | $0.016 | 33% less |
+| [Namespace](https://namespace.so/pricing) | hosted | $0.006 | $0.012 | $0.024 | same |
+| [Depot](https://depot.dev/docs/github-actions/runner-types) | hosted | $0.006 | $0.012 | $0.024 | same |
+| [RunsOn](https://runs-on.com/pricing/) | your own AWS account | $0.0009 | $0.0013 | $0.0021 | 85% less |
+| [Latchkey](https://latchkey.dev/pricing) | hosted | $0.0025 | $0.005 | $0.01 | 58% less |
+| [StarSling](https://starsling.dev/pricing) | hosted | $0.004 | $0.008 | $0.016 | 33% less |
+| [Avrea](https://avrea.com/pricing) | hosted | $0.004 | $0.008 | $0.016 | 33% less |
+| [compiler.dev](https://compiler.dev/pricing) | hosted | $0.002 | $0.004 | $0.008 | 67% less |
+| [BuildJet](https://buildjet.com/for-github-actions/blog/we-are-shutting-down) | shut down 2026-03-31 | — | — | — | — |
 
 RunsOn runs in your own AWS account: its figure is spot compute plus its licence, not a hosted price. BuildJet stopped running jobs on 2026-03-31.
 
@@ -46,12 +46,12 @@ List price before free or included usage.
 
 | Runner | Published prices per minute | Note |
 |---|---|---|
-| CRACI | 2 vCPU $0.004 | one published size (2 vCPU, 6 GB) |
-| tempus.build | 2 vCPU $0.004, 4 vCPU $0.008 | no 8 vCPU price published |
-| FlameWill | 2 vCPU $0.0009, 4 vCPU $0.0018, 8 vCPU $0.0048 | arm64 only, priced by memory (8, 16 and 32 GB) |
-| Bitrise Build Hub | 4 vCPU $0.0125 |  |
-| Cirrus Runners | not published per minute |  |
-| Actuated | not published per minute |  |
+| [CRACI](https://craci.com/pricing) | 2 vCPU $0.004 | one published size (2 vCPU, 6 GB) |
+| [tempus.build](https://tempus.build/en/) | 2 vCPU $0.004, 4 vCPU $0.008 | no 8 vCPU price published |
+| [FlameWill](https://flamewill.com/pricing/) | 2 vCPU $0.0009, 4 vCPU $0.0018, 8 vCPU $0.0048 | arm64 only, priced by memory (8, 16 and 32 GB) |
+| [Bitrise Build Hub](https://bitrise.io/pricing) | 4 vCPU $0.0125 |  |
+| [Cirrus Runners](https://cirrus-runners.app/pricing/) | not published per minute |  |
+| [Actuated](https://actuated.com/pricing) | not published per minute |  |
 
 
 ## GitHub's included usage
@@ -63,4 +63,4 @@ GitHub plans include a dollar amount of Actions usage each month: $12 on Free, $
 
 - Linux x64 list prices at matched vCPU counts, in USD per minute, without volume discounts or commitments.
 - Prices are read from each provider's public pricing page on the date above and re-checked when a provider changes them.
-
+- Full comparison with sources, FAQs and monthly cost after free usage: https://sengi.run/compare
