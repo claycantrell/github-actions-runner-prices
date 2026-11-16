@@ -450,6 +450,43 @@
       }
     },
     {
+      "runner": "runners.io",
+      "provider": "runners.io",
+      "hosting": "hosted",
+      "usd_per_minute": {
+        "2": 0.004,
+        "4": 0.008,
+        "8": 0.016
+      },
+      "memory_gb": {
+        "2": 7,
+        "4": 15,
+        "8": 30
+      },
+      "labels": {
+        "2": "runnersio-2vcpu-ubuntu-2404",
+        "4": "runnersio-4vcpu-ubuntu-2404",
+        "8": "runnersio-8vcpu-ubuntu-2404"
+      },
+      "basic_minutes_per_dollar_vs_this": "4\u00d7",
+      "how_you_pay": "Per minute. 3,000 run-minutes a month included: 3,000 minutes at 2 vCPU, 1,500 at 4 vCPU or 750 at 8 vCPU. A card is required before compute runs.",
+      "free_minutes_per_month": 3000,
+      "source": {
+        "name": "runners.io's pricing page",
+        "url": "https://www.runners.io/pricing",
+        "read": "2026-11-16"
+      },
+      "plans": [
+        {
+          "name": null,
+          "usd_per_month": 0,
+          "included_usd": 12,
+          "allowance": "free",
+          "note": "3,000 run-minutes a month: 3,000 minutes at 2 vCPU, 1,500 at 4 vCPU or 750 at 8 vCPU, worth $12 at every size"
+        }
+      ]
+    },
+    {
       "runner": "BuildJet",
       "provider": "BuildJet",
       "hosting": "shut down",

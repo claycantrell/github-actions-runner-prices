@@ -19,6 +19,7 @@ Per-minute list prices for GitHub-hosted runners and the hosted services that re
 | [StarSling](https://starsling.dev/pricing) | hosted | $0.004 | $0.008 | $0.016 | 33% less |
 | [Avrea](https://avrea.com/pricing) | hosted | $0.004 | $0.008 | $0.016 | 33% less |
 | [compiler.dev](https://compiler.dev/pricing) | hosted | $0.002 | $0.004 | $0.008 | 67% less |
+| [runners.io](https://www.runners.io/pricing) | hosted | $0.004 | $0.008 | $0.016 | 33% less |
 | [BuildJet](https://buildjet.com/for-github-actions/blog/we-are-shutting-down) | shut down 2026-03-31 | — | — | — | — |
 
 RunsOn runs in your own AWS account: its figure is spot compute plus its licence, not a hosted price. BuildJet stopped running jobs on 2026-03-31.
@@ -41,6 +42,7 @@ List price before free or included usage.
 | StarSling | $12 | $160 | $1,600 |
 | Avrea | $12 | $160 | $1,600 |
 | compiler.dev | $6 | $80 | $800 |
+| runners.io | $12 | $160 | $1,600 |
 
 ## Runners priced another way
 
